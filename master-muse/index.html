@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Master the muse - building an &#039;ever-ready&#039; music app toolkit for your iPhone - Music App Blog</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Master the muse - building an &#039;ever-ready&#039; music app toolkit for your iPhone."/>
+<link rel="canonical" href="index.html" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Music App Blog &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Music App Blog &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Music App Blog &raquo; Master the muse &#8211; building an &#8216;ever-ready&#8217; music app toolkit for your iPhone Comments Feed" href="feed/index.html" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.0.5 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_track_user = true;
+	
+	var disableStr = 'ga-disable-UA-32632829-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','../www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-32632829-1', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you\'re not being tracked. ");
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+		})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/musicapp.ml\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='../wp-content/plugins/yet-another-related-posts-plugin/style/widget5010.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='sociablecss-css'  href='../wp-content/plugins/sociable/css/sociable5010.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='news-theme-css'  href='../wp-content/themes/news/stylec141.css?ver=2.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles972f.css?ver=5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='youtube-simplegallery-css'  href='../wp-content/plugins/youtube-simplegallery/youtube_simplegallery5010.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='yarpp-thumbnails-yarpp-thumbnail-css'  href='../wp-content/plugins/yet-another-related-posts-plugin/includes/styles_thumbnails.cssf911.css?width=120&amp;height=120&amp;ver=4.4' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/sociable/js/sociable5010.js?ver=4.9.8'></script>
+<script type='text/javascript' src='../wp-content/plugins/sociable/js/vuible5010.js?ver=4.9.8'></script>
+<script type='text/javascript' src='../wp-content/plugins/sociable/js/addtofavorites5010.js?ver=4.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/musicapp.ml","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.minfd3b.js?ver=7.0.5'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://musicapp.ml/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='../indexf869.html?p=7881' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed9474.json?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed36d8?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;format=xml" />
+<script type='text/javascript'>var base_url_sociable = 'http://musicapp.ml/wp-content/plugins/sociable/'</script><script type='text/javascript' src='../apis.google.com/js/plusone.js'></script><link rel="icon" href="../wp-content/themes/news/images/favicon.ico" />
+<style type="text/css">#header { background: url(../wp-content/uploads/2012/07/music-app-blog-top-image-v4.png) no-repeat !important; }.custom-header #title a, .custom-header #title a:hover, .custom-header #description { color: #000000 !important; }</style>
+<link rel="stylesheet" href="../wp-content/plugins/oiopub-direct/images/style/output.css" type="text/css" />
+</head>
+<body class="post-template-default single single-post postid-7881 single-format-standard custom-header header-full-width content-sidebar"><div id="wrap"><div id="header"><div class="wrap"><div id="title-area"><p id="title"><a href="../index.html">Music App Blog</a></p><p id="description">Music app reviews, news and tutorials for the mobile music producer</p></div></div></div><div id="nav"><div class="wrap"><ul id="menu-main-menu" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-63"><a href="../index.html">Home</a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-62"><a href="../category/news/index.html">News</a></li>
+<li id="menu-item-2739" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-2739"><a href="../category/how-to/index.html">Getting Started</a>
+<ul class="sub-menu">
+	<li id="menu-item-7924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7924"><a href="../category/why-ios-for-music/index.html">Why iOS for music?</a></li>
+	<li id="menu-item-7923" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7923"><a href="../category/ios-music-app-roundups/index.html">iOS music app roundups</a></li>
+	<li id="menu-item-7922" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-7922"><a href="../category/getting-started-articles/index.html">Getting Started Articles</a></li>
+	<li id="menu-item-9515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9515"><a href="../ipad-recording-studio-series/index.html">iPad Recording Studio Series</a></li>
+	<li id="menu-item-13367" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13367"><a href="../category/midi-101-series/index.html">MIDI 101 series</a></li>
+	<li id="menu-item-3857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3857"><a href="../top-music-apps-current-picks/index.html">Best Apps</a></li>
+	<li id="menu-item-6535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6535"><a href="../user-tracks-intro/index.html">Reader Track Intro</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6483" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6483"><a href="../category/how-to/how-i-made-this/index.html">Reader Tracks List</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-58" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-58"><a href="../category/how-to/articles/index.html">Articles</a></li>
+<li id="menu-item-1801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1801"><a href="../category/music-app-reviews-2/index.html">Reviews</a>
+<ul class="sub-menu">
+	<li id="menu-item-85" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-85"><a href="../category/hardware/index.html">Hardware</a></li>
+	<li id="menu-item-1805" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1805"><a href="../category/music-app-reviews-2/instrument-apps/index.html">Instrument Apps</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2259" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2259"><a href="../category/music-app-reviews-2/instrument-apps/synth-apps/index.html">Synth/keyboard apps</a></li>
+		<li id="menu-item-2260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2260"><a href="../category/music-app-reviews-2/instrument-apps/guitar-related-apps/index.html">Guitar-related apps</a></li>
+		<li id="menu-item-2284" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2284"><a href="../category/music-app-reviews-2/instrument-apps/drum-apps/index.html">Drum apps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1806" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1806"><a href="../category/music-app-reviews-2/recording-apps/index.html">Recording Apps</a></li>
+	<li id="menu-item-6131" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6131"><a href="../category/audio-effect-apps/index.html">Audio Effect Apps</a></li>
+	<li id="menu-item-1807" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1807"><a href="../category/music-app-reviews-2/utility-apps/index.html">Utility Apps</a></li>
+	<li id="menu-item-6132" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6132"><a href="../category/midi-apps/index.html">MIDI Apps</a></li>
+	<li id="menu-item-3328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3328"><a href="../music-app-blog-youtube-channel/index.html">Videos</a></li>
+</ul>
+</li>
+<li id="menu-item-1797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1797"><a href="../music-app-blog-archives/index.html">Explore Archive</a></li>
+<li id="menu-item-3066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3066"><a href="../ios-music-making-links/index.html">Links</a></li>
+
+
+
+</ul></div></div><div id="inner"><div class="wrap"><div id="content-sidebar-wrap"><div id="content" class="hfeed"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">You are here: <a href="../index.html"><span>Home</span></a> <span aria-label="breadcrumb separator">/</span> <a href="../category/how-to/index.html"><span>Getting Started</span></a> <span aria-label="breadcrumb separator">/</span> <a href="../category/how-to/articles/index.html"><span>Articles</span></a> <span aria-label="breadcrumb separator">/</span> Master the muse &#8211; building an &#8216;ever-ready&#8217; music app toolkit for your iPhone</div><div class="post-7881 post type-post status-publish format-standard has-post-thumbnail hentry category-articles category-how-to category-getting-started-articles category-ios-music-app-roundups tag-getting-started tag-ios-music tag-ios-music-apps tag-iphone tag-music-apps entry"><h1 class="entry-title">Master the muse &#8211; building an &#8216;ever-ready&#8217; music app toolkit for your iPhone</h1>
+<div class="post-info"><span class="date published time" title="2014-05-30T10:19:18+00:00">May 30, 2014</span>  by <span class="author vcard"><span class="fn"><a href="../author/iamincharge123/index.html" rel="author">John</a></span></span> <span class="post-comments"><a href="index.html#comments">9 Comments</a></span> </div><div class="entry-content"><p><a href="../wp-content/uploads/2014/05/flaming-music-notation.jpg"><img class="alignleft size-thumbnail wp-image-7883" src="../wp-content/uploads/2014/05/flaming-music-notation-150x150.jpg" alt="flaming music notation" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2014/05/flaming-music-notation-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/05/flaming-music-notation-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/05/flaming-music-notation-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/05/flaming-music-notation-120x120.jpg 120w" sizes="(max-width: 150px) 100vw, 150px" /></a>If you subscribe to the <a title="Music App Blog newsletter – free guide when you signup" href="../music-app-blog-email-newsletter/index.html" target="_blank">Music App Blog email newsletter</a> you might recall that a couple of weeks ago I asked subscribers to let me know what they thought was the biggest bottleneck to their iOS music creativity. I got a whole raft of different answers but there were two themes that cropped up above all the others as causes of productivity blocks.</p>
+<p>First, several readers suggested their key issue was being able to capture an idea quickly before the tiny spark of inspiration slipped away. Interestingly, this included times when they were not in their usual ‘writing space’ or home/project studio; just out and about and trying to grasp an idea before it disappears.</p>
+<p>Second, and this is something I’ve <a title="Getting music done – and how (just a little bit) iOS might help" href="../getting-music-done/index.html" target="_blank">discussed before on the blog</a>, a good number of readers identified technology overload as a key problem. In particular, many of you commented that you had lots (and lots) of very good music apps (and there are a great many of them to be had) but, because you had so many, you didn’t feel you ever quite mastered any of them or knew which specific combination of apps to turn to when you wanted to get an idea started. In short, the problem was too much time experimenting with apps and not enough time making music.</p>
+<div id="attachment_7886" style="width: 262px" class="wp-caption alignright"><a href="../wp-content/uploads/2014/05/shutterstock_71662147.jpg"><img class=" wp-image-7886" src="../wp-content/uploads/2014/05/shutterstock_71662147-300x284.jpg" alt="&quot;It was a hit I tell you, an absolute nailed-on hit....&quot;" width="252" height="239" srcset="http://musicapp.ml/wp-content/uploads/2014/05/shutterstock_71662147-300x284.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/shutterstock_71662147.jpg 1000w" sizes="(max-width: 252px) 100vw, 252px" /></a><p class="wp-caption-text">&#8220;It was a hit I tell you, an absolute nailed-on hit&#8230;.&#8221;</p></div>
+<p>While these are two different issues, they do have something in common; if you are going to be productive with your iOS music making, you need the right app at the right time. As mentioned above, I sort of touched upon the second issue <a title="Getting music done – and how (just a little bit) iOS might help" href="../getting-music-done/index.html" target="_blank">in a post a while ago</a> (although it is something I will come back to at some point soon).</p>
+<p>In this post, however, I’d like get to share some thoughts about the first issue raised above; how to have your iOS music technology ready to roll as soon as your musical muse pokes its head above water.</p>
+<h4><strong>Ever-ready (part 1)</strong></h4>
+<p>We have probably all experienced the situation; the nub of an idea pops into your head. It’s novel, it’s exciting, it’s going to be a sure-fire hit….   and it’s gone before you can even begin to capture or realise it in some form. That missed bit of music magic might be down to not having your usual musical toolkit handy (your at work, in the bath, in bed, on the bus, etc.) or it might be that said musical toolkit doesn’t contain the right tool (a pencil and notebook is fine for a lyricist but not so great for a guitar chord progression or a drum beat).</p>
+<p>OK, so we need the right tool (or tools) and we need to have them handy pretty much all the time. Of course, given this is the Music App Blog, in terms of the right tools, I’ll focus my attention on apps. And, if we are going to have those tools with us at all times, then (for me at least) those apps have to run on my phone. If you are anything like me, then by force of habit, your phone is likely to be close at hand almost all the time; in a pocket, beside the bed…  perhaps not actually in the shower but generally not far away….</p>
+<p>So, my option for being ‘ever-ready’ would have to be based around my iPhone rather than my iPad and, for good measure, I’ll add in a pair of ear buds (Apple or otherwise) to complete my minimalist hardware that I pretty much always have to hand.</p>
+<h4><strong>The right tool at the right time</strong></h4>
+<p>As you are here (and not off reading an Android-based music blog), I’m going to assume that your phone of choice is likely to also be an iPhone (apologies if not). However, when it comes to the ‘tools’ themselves (the apps), one person’s ‘right app’ is not going to be the same as someone else’s; we all make different music and in different ways. What follows, therefore, is very much a personal take on my ‘muse catcher apps’ but I’ll try to generalise from my own specific choices and, hopefully, this might give you some food for thought in compiling your own iPhone-based app toolkit.</p>
+<p>For my own ‘always with me’ toolkit of apps, I actually have several needs and, while we could all reel off an endless list of apps that it would be good to have to hand, for this particular type of task – capturing the basics of a good idea before it slips away – I think the smaller the number of tools in the bag the better. In general terms, therefore, my own kit list would be as follows:</p>
+<ul>
+<li>A simple memo/voice recording app</li>
+<li>A simple ‘notepad’ app for text</li>
+<li>A looper app</li>
+<li>A playable guitar app</li>
+<li>A decent virtual instrument sound source app</li>
+<li>An ‘instant drum track’ app</li>
+<li>A simple multitrack recorder app</li>
+<li>Audiobus 2 (almost goes without saying although I might not use it much in this context)</li>
+</ul>
+<p>Bear in mind that these are apps I want to capture an idea I’ve just had…  and that’s not necessarily the same thing as using apps to create that idea in the first place. That second task – apps for inspiration – we will save for another day.</p>
+<p>Obviously, your list might be shorter or longer than my own (it depends upon how you like to deal with your moments of inspiration), but, for me, this set of seven tools (plus, of course, the ‘app glue’ that is Audiobus) covers the vast majority of my needs. So, what are the actual apps in each of these categories that currently sit on my own iPhone?</p>
+<h4><strong>A simple memo/voice recording app</strong></h4>
+<p>Providing you are in a place where you can do it (that is, not in a public place where you will freak folks out or next to someone working with a pneumatic drill), often the jest way to ‘catch’ a bit of musical inspiration is simply to record yourself a quick audio snippet. This might simply be you dictating a description of the idea or a few lines of lyrics…  or perhaps you might hum a melody or vocalise a synth, guitar or drum performance. For any of these tasks, you just need the simplest audio recording app that you can fire up quickly….</p>
+<div id="attachment_7873" style="width: 314px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/voice-memos-master-muse-2.jpg"><img class=" wp-image-7873" src="../wp-content/uploads/2014/05/voice-memos-master-muse-2-576x1024.jpg" alt="Voice Memos - you hum it, it will record it." width="304" height="541" srcset="http://musicapp.ml/wp-content/uploads/2014/05/voice-memos-master-muse-2-576x1024.jpg 576w, http://musicapp.ml/wp-content/uploads/2014/05/voice-memos-master-muse-2-169x300.jpg 169w, http://musicapp.ml/wp-content/uploads/2014/05/voice-memos-master-muse-2.jpg 640w" sizes="(max-width: 304px) 100vw, 304px" /></a><p class="wp-caption-text">Voice Memos &#8211; you hum it, it will record it.</p></div>
+<p>While there are lots of basic mono/stereo recording apps on the App Store, having used Apple’s own Voice Memos app since I got my first iPhone, for this particular task – quickly catching a music idea in an audio recording – Voice Memos is more than up to the job. What’s more, it is ultra-simple to use; open the app, hit the record button and away you go. Once the idea is captured you can give the file a name and, once saved, you can export the recording via AirDrop or email (which is what I tend to do).</p>
+<p>I don’t need rocket science here and Voice Memos doesn’t do anything to get in the way of the most important aspect of this task; the initial recording of the idea. Oh, and it’s free as part of the OS so you don&#8217;t even need to download or install it; it&#8217;s already on your iPhone.</p>
+<h4><strong>A simple ‘notepad’ app for text</strong></h4>
+<p><a href="../wp-content/uploads/2014/05/evernote-logo.jpg"><img class="alignleft size-thumbnail wp-image-7891" src="../wp-content/uploads/2014/05/evernote-logo-150x150.jpg" alt="evernote logo" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2014/05/evernote-logo-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-logo-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-logo-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-logo-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-logo.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>Sometimes it is simply not convenient to start talking, singing, humming or beat-boxing your new musical spark. On those occasions – or when I’ve a few lines of lyrics that pop into my head – I simply resort to typing. I try not to let my clumsy touchscreen typing get in the way (ignore the typos); I just want a means of getting the idea down as quickly as possible and, hopefully, in a format that makes it easy to pick up later when I want to refine it.</p>
+<div id="attachment_7872" style="width: 346px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/evernote-master-muse-1.jpg"><img class=" wp-image-7872" src="../wp-content/uploads/2014/05/evernote-master-muse-1-576x1024.jpg" alt="There are lots of note taking apps out there but Evernote is my personal choice." width="336" height="597" srcset="http://musicapp.ml/wp-content/uploads/2014/05/evernote-master-muse-1-576x1024.jpg 576w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-master-muse-1-169x300.jpg 169w, http://musicapp.ml/wp-content/uploads/2014/05/evernote-master-muse-1.jpg 640w" sizes="(max-width: 336px) 100vw, 336px" /></a><p class="wp-caption-text">There are lots of note taking apps out there but Evernote is my personal choice.</p></div>
+<p>My choice here is a brilliant app but, for this particular application, perhaps not the most obvious choice; Evernote. Evernote is a note taking/making app but it is perhaps not the most simple of apps to fire up and start typing. Yes, you do just launch the app and then hit the ‘Text’ button to create a new text-based note, however, once it is created (and depending upon how much you use Evernote for other things), you then have to think about where that note will end up.</p>
+<p>Evernote allows you to organise your notes into ‘notebooks’ – essentially separate collections of notes &#8211; so I keep a notebook for ‘lyrics’. However, the reason I like the app so much is that it is also available for OSX and Windows and, if you install it on your various devices, your Evernote account (and the basic account is free) will keep these in sync. Create a lyric idea on your iPhone and, when you run Evernote on your iPad or desktop, that note will be there waiting for you to carry on working; very neat.</p>
+<p>The app itself is free and a basic account is also free. I use the app quite a lot and have never found the various data limits of the free account to be an issue. However, if you do become a mega-user, then there are various price models for different levels of use. Honest – the free version is absolutely fine for the occasional bit of lyric capture.</p>
+<h4><strong>A looper app</strong></h4>
+<p><a href="../wp-content/uploads/2013/06/Loopy-HD-logo.jpg"><img class="alignleft size-thumbnail wp-image-2465" src="../wp-content/uploads/2013/06/Loopy-HD-logo-150x150.jpg" alt="Loopy HD logo" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2013/06/Loopy-HD-logo-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2013/06/Loopy-HD-logo-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2013/06/Loopy-HD-logo-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2013/06/Loopy-HD-logo-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2013/06/Loopy-HD-logo.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>Sometimes, rather than just a snatch of a melody or a couple of lines of lyrics, an idea pops up that requires a bit of a bass line, some vocalised drums and then a melody or vocal line on top of it. While this could be done with a DAW-type app (and I’ll come back to that in a minute), when I’ve just got the nub of an idea, I like to use a looper-style app for this kind of thing. It allows you to record a couple of bars of beat-boxing, vocalise a bass line and perhaps some ‘chords’ (sing like a piano or guitar) and then add a vocal hook.</p>
+<div id="attachment_7874" style="width: 342px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/loopyhd-master-muse.jpg"><img class=" wp-image-7874" src="../wp-content/uploads/2014/05/loopyhd-master-muse-576x1024.jpg" alt="For a looper app, I generally turn to Loopy HD." width="332" height="590" srcset="http://musicapp.ml/wp-content/uploads/2014/05/loopyhd-master-muse-576x1024.jpg 576w, http://musicapp.ml/wp-content/uploads/2014/05/loopyhd-master-muse-169x300.jpg 169w, http://musicapp.ml/wp-content/uploads/2014/05/loopyhd-master-muse.jpg 640w" sizes="(max-width: 332px) 100vw, 332px" /></a><p class="wp-caption-text">For a looper app, I generally turn to Loopy HD.</p></div>
+<p>There are a few looper apps available under iOS but, as much through habit as anything else, my weapon of choice here would be <a title="Music App Review – Loopy HD app by A Tasty Pixel" href="../music-app-review-loopy-hd/index.html" target="_blank">Loopy HD</a> (UK£2.49). This is such a cool app and while it does take a little initial practice to get the whole ‘looper’ approach to doing things, once you have done that, LoopyHD is a hugely creative platform for both capturing a basic idea and then pushing it on. And as LoopyHd has excellent export options and is happy to work with Audiobus and supports MIDI Clock sync, it is more than capable of taking you beyond the basic ‘idea capture’ stage when you are ready to go there.</p>
+<h4><strong>A playable guitar app</strong></h4>
+<p><a href="../wp-content/uploads/2013/08/guitarism-logo-2.jpg"><img class="alignleft size-thumbnail wp-image-3811" src="../wp-content/uploads/2013/08/guitarism-logo-2-150x150.jpg" alt="guitarism logo 2" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2013/08/guitarism-logo-2-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2013/08/guitarism-logo-2-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2013/08/guitarism-logo-2-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2013/08/guitarism-logo-2-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2013/08/guitarism-logo-2.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>As someone with half-decent guitar skills (and pretty lousy keyboard skills), it’s not always possible to have my favourite instrument to hand when out and about (school run, dog walk, weekly shop, etc.). So, while it might be something of a second-best option, a virtual guitar app is most certainly part of my own ever-ready toolkit. I’m not looking for something that offers tons of features. No, what I really want is something that I can actually play and get a passible impression of some strummed chords</p>
+<div id="attachment_7875" style="width: 478px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/guiatrism-master-muse.jpg"><img class=" wp-image-7875" src="../wp-content/uploads/2014/05/guiatrism-master-muse-1024x576.jpg" alt="Guitarism - just strumtastic :-)" width="468" height="263" srcset="http://musicapp.ml/wp-content/uploads/2014/05/guiatrism-master-muse-1024x576.jpg 1024w, http://musicapp.ml/wp-content/uploads/2014/05/guiatrism-master-muse-300x169.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/guiatrism-master-muse.jpg 1136w" sizes="(max-width: 468px) 100vw, 468px" /></a><p class="wp-caption-text">Guitarism &#8211; just strumtastic :-)</p></div>
+<p>The App Store has a number of playable guitar app. My personal favourite – and has been for some time – is <a title="Guitarism updated – rhism adds an electric option in v.3.2" href="../guitarism-update/index.html" target="_blank">Guitarism</a>. The basic app is free but, via a number of IAPs (all excellent by the way), the app can now do a range of both acoustic and electric guitar sounds. However, given this ‘idea capture’ task I’m focused on here, I’m happy to just take the default acoustic with a basic set of 6 chords buttons in my chosen key and to get strumming.</p>
+<p>With just a little practice, for low and medium tempo strumming, Guitarism can produce some very realistic results although higher tempos, however, do take a bit more practice. With Audiobus support, if you want to capture your strumming (for example, a few bars into LoopyHD) then that’s also possible.</p>
+<h4><strong>A decent virtual instrument sound source app</strong></h4>
+<p><a href="../wp-content/uploads/2014/05/bs-16i-logo.jpg"><img class="alignleft size-thumbnail wp-image-7896" src="../wp-content/uploads/2014/05/bs-16i-logo-150x150.jpg" alt="bs-16i logo" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-logo-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-logo-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-logo-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-logo-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-logo.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>Of course, not every idea might work with a strummed guitar so another key item in my toolkit would be a more generic ‘virtual instrument’ sound source. You could opt for a synth-based app here but, for my own needs, I prefer a sample-based approach. This means I can have any sound I might like, whether that’s a piano, an organ, a string section, a bass synth or a tuba. And, given that this is my iPhone (so I want the app to have a small-ish storage footprint) and it is just for basic idea-capture duties, I don’t need the ultimate in terms of mega-sample libraries.</p>
+<div id="attachment_7876" style="width: 480px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/bs-16i-master-muse.jpg"><img class=" wp-image-7876" src="../wp-content/uploads/2014/05/bs-16i-master-muse-300x169.jpg" alt="Bismark's bs-16i gives me a good palette of basic sounds to work with on my iPhone." width="470" height="265" srcset="http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-master-muse-300x169.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-master-muse-1024x576.jpg 1024w, http://musicapp.ml/wp-content/uploads/2014/05/bs-16i-master-muse.jpg 1136w" sizes="(max-width: 470px) 100vw, 470px" /></a><p class="wp-caption-text">Bismark&#8217;s bs-16i gives me a good palette of basic sounds to work with on my iPhone.</p></div>
+<p>My own choice here is Bismark bs-16i (UK£5.49). It only takes up about 50MB of space but provides a very respectable SoundFont-based sample library covering a wide range of GM-style instruments. The quality of the sounds is actually pretty good and, as it supports both Audiobus and IAA and the size of the keys can be adjusted to suit even the stubbiest of fingers on the relatively modest iPhone screen, it does the business with a minimum of fuss.</p>
+<h4><strong>An ‘instant drum track’ app</strong></h4>
+<p><a href="../wp-content/uploads/2014/05/drumjam-logo.jpg"><img class="alignleft size-thumbnail wp-image-7736" src="../wp-content/uploads/2014/05/drumjam-logo-150x150.jpg" alt="drumjam logo" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2014/05/drumjam-logo-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-logo-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-logo-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-logo-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-logo.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>If I’m wanting to experiment with the little snippet of a tune that has popped into my head, often I quite like to just set a suitable drum beat looping so that I can play off against the rhythm of the loop. And, to do that, I obviously need a drum app of some sort. One approach to this would just to be have a bunch of audio drum loops available but a decent collection of these can eat into the somewhat limited storage space on my phone.</p>
+<div id="attachment_7877" style="width: 486px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/drumjam-master-muse.jpg"><img class=" wp-image-7877" src="../wp-content/uploads/2014/05/drumjam-master-muse-300x169.jpg" alt="For an instant drum or percussion beat, DrumJam is my current 'go to' app." width="476" height="268" srcset="http://musicapp.ml/wp-content/uploads/2014/05/drumjam-master-muse-300x169.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-master-muse-1024x576.jpg 1024w, http://musicapp.ml/wp-content/uploads/2014/05/drumjam-master-muse.jpg 1136w" sizes="(max-width: 476px) 100vw, 476px" /></a><p class="wp-caption-text">For an instant drum or percussion beat, DrumJam is my current &#8216;go to&#8217; app.</p></div>
+<p>While it isn’t the smallest of drum app apps (200MB), my latest squeeze here (a relatively recent addition to my toolkit) would be DrumJam (UK£5.49). It supports Audiobus and IAA but that’s not the key issue for me in this context. Instead, what’s important is just how quickly you can get a drum or percussion groove going with DrumJam. It’s very easy to use and the sounds (which can be expanded with some very inexpensive IAPs) are very inspiring.</p>
+<h4><strong>A simple multitrack recorder app</strong></h4>
+<p><a href="../wp-content/uploads/2014/04/multitrack-daw-logo.jpg"><img class="alignleft size-thumbnail wp-image-7008" src="../wp-content/uploads/2014/04/multitrack-daw-logo-150x150.jpg" alt="multitrack daw logo" width="150" height="150" srcset="http://musicapp.ml/wp-content/uploads/2014/04/multitrack-daw-logo-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/04/multitrack-daw-logo-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/04/multitrack-daw-logo-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/04/multitrack-daw-logo-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/04/multitrack-daw-logo.jpg 220w" sizes="(max-width: 150px) 100vw, 150px" /></a>My last choice (bar Audiobus 2 itself) is for those times when the nub of the idea – perhaps captured in essence using the apps already discussed – seems promising and I have the time and inclination to want to take it just a bit further. In these situations what I really want is a multitrack audio recording environment and, with the help of Audiobus, anything I&#8217;ve started to develop can be passed to said DAW for a little further examination.</p>
+<div id="attachment_7878" style="width: 531px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/multitrack-daw-master-muse.jpg"><img class=" wp-image-7878" src="../wp-content/uploads/2014/05/multitrack-daw-master-muse-1024x576.jpg" alt="For a streamlined interface that works very well on the iPhone, Multitrack DAW fills my DAW slot." width="521" height="293" srcset="http://musicapp.ml/wp-content/uploads/2014/05/multitrack-daw-master-muse-1024x576.jpg 1024w, http://musicapp.ml/wp-content/uploads/2014/05/multitrack-daw-master-muse-300x169.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/multitrack-daw-master-muse.jpg 1136w" sizes="(max-width: 521px) 100vw, 521px" /></a><p class="wp-caption-text">For a streamlined interface that works very well on the iPhone, Multitrack DAW fills my DAW slot.</p></div>
+<p>On the iPad, I’d now be reaching for <a title="Cubasis update – full review of v.1.8 of Steinberg’s iOS DAW" href="../cubasis-1-8-full-review/index.html" target="_blank">Cubasis</a> but, as that doesn’t run on my iPhone, then an alternative is required. For me, that’s <a title="Multitrack DAW review – compact iOS DAW from Harmonicdog" href="../multitrack-daw-review/index.html" target="_blank">Multitrack DAW</a> (UK£6.99). What I like about this app – particularly on the iPhone – is the simplicity of the interface. Indeed, the whole ethos of the app is based around a fairly streamlined feature set. In the context I’m thinking of here – perhaps working together a very basic verse + chorus song idea with a bit of strummed (virtual) guitar, some drums/percussion and a synth part or two – it is ideal.</p>
+<h4><strong>Is that it?</strong></h4>
+<p>Don’t get me wrong, the app addict inside me could easily add some ‘extras’ to this list. Two obvious examples would be <a title="Synthecaster update – Daniel Resnick back with another new feature" href="../synthecaster-update-3/index.html" target="_blank">Synthecaster</a> and <a title="ChordPolyPad review – MIDI chord generator app from Laurent Colson" href="../chordpolypad-review/index.html" target="_blank">ChordPolyPad</a> for triggering MIDI chords in bs-16i for when my fingers just wont behave on the virtual piano keyboard. And you could, of course, add a synth or two.</p>
+<p>However, I wanted to keep this compact and simple….  so let’s just stick with the main choices shown here.</p>
+<h4><strong>Ever-ready (part 2)</strong></h4>
+<p>So we have the necessary tools and, as they are sitting on our surgically attached iPhone, we pretty much always have them to hand. Is that it? Are we now ever-ready? Well, no, not quite….</p>
+<p>The reason for identifying this compact list of ‘go to’ apps for your iPhone is so you can grasp the musical inspiration without skipping a beat. You need the technology to facilitate that process and not get in the way.</p>
+<p>So, as well as making sure you have your iPhone (and those ear buds) close at hand as often as possible, you also need to be pretty sure that you know which buttons to press to get as quickly possible to the ‘capture‘ bit….  If you turn your back on your muse for a second or two while you faff about being ‘techie’ with your technology, muse will have scarpered off down the pub leaving you holding an expensive – but not very productive &#8211; bit of technology in your hand.</p>
+<div id="attachment_7880" style="width: 483px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/Audiobus-master-muse.jpg"><img class=" wp-image-7880" src="../wp-content/uploads/2014/05/Audiobus-master-muse-1024x576.jpg" alt="Audiobus 2 is also always on stand-by should the need arise." width="473" height="266" srcset="http://musicapp.ml/wp-content/uploads/2014/05/Audiobus-master-muse-1024x576.jpg 1024w, http://musicapp.ml/wp-content/uploads/2014/05/Audiobus-master-muse-300x169.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/05/Audiobus-master-muse.jpg 1136w" sizes="(max-width: 473px) 100vw, 473px" /></a><p class="wp-caption-text">Audiobus 2 is also always on stand-by should the need arise.</p></div>
+<p>In the main, this boils down to knowing this limited number of apps inside out and being able to summon the apps you need in an instant (hence, in the screenshot shown here, my collection of apps have their own home page rather than being scattered around or buried in folders). The analogy with photography is obvious but also instructive here. What’s the best camera to use to take the opportunistic photo that’s just presented itself? Answer; the one you have got with you (i.e. your iPhone)….  but not if the camera app you use takes ages to load and requires anything more than a single press to fire off a shot….</p>
+<p>If you really want to be ‘ever-ready’ for the next musical idea, take your compact app collection and master the basic operation of each app within it is so that it is second nature.</p>
+<h4><strong>In summary</strong></h4>
+<p>As I outlined at the start of this piece, my personal selection of apps is aimed at one very specific task; allowing me to flip my iPhone out at a moments notice and give myself the best shot of catching a musical idea – whatever form that might take – as soon as it presents itself. I’d also add that I think these apps are listed pretty much in order of frequency of use for that task; Voice Memos, Endnote and Loopy HD are the ones that I turn to most often for this particular type of job.</p>
+<div id="attachment_7870" style="width: 324px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2014/05/iphone-master-muse-apps.jpg"><img class=" wp-image-7870" src="../wp-content/uploads/2014/05/iphone-master-muse-apps-576x1024.jpg" alt="My 'ever-ready' app collection - easy to access, easy to use and always with me." width="314" height="558" srcset="http://musicapp.ml/wp-content/uploads/2014/05/iphone-master-muse-apps-576x1024.jpg 576w, http://musicapp.ml/wp-content/uploads/2014/05/iphone-master-muse-apps-169x300.jpg 169w, http://musicapp.ml/wp-content/uploads/2014/05/iphone-master-muse-apps.jpg 640w" sizes="(max-width: 314px) 100vw, 314px" /></a><p class="wp-caption-text">My &#8216;ever-ready&#8217; app collection &#8211; easy to access, easy to use and always with me.</p></div>
+<p>Of course, your selection of apps may well differ from mine simply because you make music in a different way to me. Equally, you might have apps that you use that are a direct alternative to those I’ve listed here simply because you feel they are a better fit for you. Either way, feel fee to pop your own personal list of ‘ever-ready’ apps in the Comments section below…  you might give others a bit of inspiration when compiling their own app tool kit.</p>
+<p>Coming back to the responses from the newsletter subscribers that triggered this post – the bottlenecks that can hinder their iOS music making and, more specifically, the need to be able to capture a new idea before it escapes and is lost forever – while I’m talking iOS here, the basis of my suggested solution is nothing new. You need the right tool, at the right time and you need to know how to use it.</p>
+<p>And while we can all argue the toss about the specific apps, I think the key point I’m trying to get across in this piece is that a few well-chosen apps can be the right tool(s). Have them on your iPhone and they are (mostly) always with you. Learn how to use them and you will be ‘ever-ready’ whenever your muse chooses to strike. Happy music making :-)</p>
+<h4>Evernote</h4>
+
+
+<a href="https://itunes.apple.com/us/app/evernote/id281796108?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+
+</br>
+
+
+<h4>Loopy HD</h4>
+
+
+<a href="https://itunes.apple.com/us/app/loopy-hd/id467923185?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+
+</br>
+
+
+<h4>Guitarism</h4>
+<h4>
+ 
+<a href="https://itunes.apple.com/us/app/guitarism-pocket-guitar/id409707446?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+ 
+</br>
+ 
+</h4>
+<h4>bs-16i</h4>
+
+ 
+<a href="https://itunes.apple.com/us/app/bismark-bs-16i/id388149926?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+ 
+</br>
+ 
+
+<h4>DrumJam</h4>
+
+
+
+<a href="https://itunes.apple.com/us/app/drumjam/id530162824?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+
+
+</br>
+
+
+<h4>Multitrack DAW</h4>
+
+
+
+<a href="https://itunes.apple.com/us/app/multitrack-daw/id329322101?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+
+
+</br>
+
+
+<h4>Audiobus 2</h4>
+
+
+<a href="https://itunes.apple.com/us/app/audiobus/id558513570?mt=8&amp;uo=4&amp;at=10l3RB" target="itunes_store"style="display:inline-block;overflow:hidden;background:url(httpslinkmaker.itunes.apple.com/en-us) no-repeat;width:135px;height:40px;@media only screen{background-image:url(httplinkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+ 
+</br>
+
+
+<!-- Start Sociable --><div class="sociable"><div class="sociable_tagline">Be Sociable; share this post.... </div><ul class='clearfix'></ul><div onMouseout="fixOnMouseOut(this,event,'post-7881')" id="sociable-post-7881" style="display:none;">   
+
+    <div style="top: auto; left: auto; display: block;" id="sociable">
+
+
+
+		<div class="popup">
+
+			<div class="content">
+
+				<ul><li style="heigth:32px;width:32px"><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;t=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="Myspace" class="option1_32" style="background-position:0px -32px" rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;t=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="http://twitter.com/intent/tweet?text=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone%20-%20http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F%20%20%20SHARETAG"></a></li><li style="heigth:32px;width:32px"><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;source=Music+App+Blog+Music+app+reviews%2C+news+and+tutorials+for+the+mobile+music+producer&amp;summary=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="Delicious" class="option1_32" style="background-position:-32px 0px" rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;notes=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="Digg" class="option1_32" style="background-position:-64px 0px" rel="nofollow" target="_blank" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;bodytext=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="Reddit" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://reddit.com/submit?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="StumbleUpon" class="option1_32" style="background-position:-224px -32px" rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="Google Bookmarks" class="option1_32" style="background-position:-192px 0px" rel="nofollow" target="_blank" href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;annotation=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="HackerNews" class="option1_32" style="background-position:-256px 0px" rel="nofollow" target="_blank" href="http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;t=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="MSNReporter" class="option1_32" style="background-position:-352px 0px" rel="nofollow" target="_blank" href="http://reporter.es.msn.com/?fn=contribute&amp;Title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;URL=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;cat_id=6&amp;tag_id=31&amp;Remark=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="BlinkList" class="option1_32" style="background-position:0px 0px" rel="nofollow" target="_blank" href="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;Title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone"></a></li><li style="heigth:32px;width:32px"><a title="Sphinn" class="option1_32" style="background-position:-192px -32px" rel="nofollow" target="_blank" href="http://sphinn.com/index.php?c=post&amp;m=submit&amp;link=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F"></a></li><li style="heigth:32px;width:32px"><a title="Posterous" class="option1_32" style="background-position:-64px -32px" rel="nofollow" target="_blank" href="http://posterous.com/share?linkto=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;selection=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="Tumblr" class="option1_32" style="background-position:-256px -32px" rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;t=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;s=If%20you%20subscribe%20to%20the%20Music%20App%20Blog%20email%20newsletter%20you%20might%20recall%20that%20a%20couple%20of%20weeks%20ago%20I%20asked%20subscribers%20to%20let%20me%20know%20what%20they%20thought%20was%20the%20biggest%20bottleneck%20to%20their%20iOS%20music%20creativity.%20I%20got%20a%20whole%20raft%20of%20different%20answers"></a></li><li style="heigth:32px;width:32px"><a title="email" class="option1_32" style="background-position:-160px 0px" rel="nofollow" target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to&amp;su=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;body=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;ui=2&amp;tf=1&amp;shva=1"></a></li><li style="heigth:32px;width:32px"><a title="Google Reader" class="option1_32" style="background-position:-224px 0px" rel="nofollow" target="_blank" href="http://www.google.com/reader/link?url=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;title=Master%20the%20muse%20-%20building%20an%20%27ever-ready%27%20music%20app%20toolkit%20for%20your%20iPhone&amp;srcURL=http%3A%2F%2Fmusicapp.ml%2Fmaster-muse%2F&amp;srcTitle=Music+App+Blog+Music+app+reviews%2C+news+and+tutorials+for+the+mobile+music+producer"></a></li><li style="heigth:32px;width:32px"><a class="option1_32" style="cursor:pointer;background-position:-128px 0px" rel="nofollow" title="Add to favorites - doesn't work in Chrome"  onClick="javascript:AddToFavorites();"></a></li><li style="heigth:32px;width:32px"><a style="cursor:poainter" rel="nofollow"   onMouseOver="more(this,'post-7881')"><img style='margin-top:9px' src='../wp-content/plugins/sociable/images/more.png' title="" alt="" /></a></li></ul>			
+
+			</div>        
+
+		  <a style="cursor:pointer" onclick="hide_sociable('post-7881',true)" class="close">
+
+		  <img onclick="hide_sociable('post-7881',true)" title="" src="../wp-content/plugins/sociable/images/closelabel.png" alt="" />
+
+		  </a>
+
+		</div>
+
+	</div> 
+
+  </div></div><div class='sociable' style='float:none'><ul class='clearfix'><li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="Master the muse - building an 'ever-ready' music app toolkit for your iPhone - http://musicapp.ml/master-muse/" data-url="http://musicapp.ml/master-muse/" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="../../platform.twitter.com/widgets.js"></script></li><li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=http://musicapp.ml/master-muse/&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li><li id="Google_p"><g:plusone annotation="bubble" href="index.html" size="medium"></g:plusone></li><li id="LinkedIn_Counter"><script src="../platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="http://musicapp.ml/master-muse/" data-counter="right"></script></li></ul></div><!-- End Sociable --><div class='yarpp-related'>
+<h3>Related posts:</h3>
+<div class="yarpp-thumbnails-horizontal">
+<a class='yarpp-thumbnail' href='../getting-started-ios-music/index.html' title='Getting started with iOS music making'>
+<img width="120" height="120" src="../wp-content/uploads/2013/07/finger-on-a-tablet-computer-screen-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="" srcset="http://musicapp.ml/wp-content/uploads/2013/07/finger-on-a-tablet-computer-screen-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2013/07/finger-on-a-tablet-computer-screen-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2013/07/finger-on-a-tablet-computer-screen-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2013/07/finger-on-a-tablet-computer-screen-50x50.jpg 50w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Getting started with iOS music making</span></a>
+<a class='yarpp-thumbnail' href='../ios-synth-apps-roundup/index.html' title='iOS synth apps roundup &#8211; brilliant virtual synths for equally brilliant prices'>
+<img width="120" height="120" src="../wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="" srcset="http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-300x300.jpg 300w, http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2-50x50.jpg 50w, http://musicapp.ml/wp-content/uploads/2014/12/iOS-synth-apps-round-image-v2.jpg 575w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">iOS synth apps roundup &#8211; brilliant virtual synths for equally brilliant prices</span></a>
+<a class='yarpp-thumbnail' href='../ios-music-technology/index.html' title='iOS music technology &#8211; the good, the bad and navigating the ugly'>
+<img width="120" height="120" src="../wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="" srcset="http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-50x50.jpg 50w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">iOS music technology &#8211; the good, the bad and navigating the ugly</span></a>
+<a class='yarpp-thumbnail' href='../less-is-more-part-2/index.html' title='Less is more; part 2 – a compact iOS music app collection for recording'>
+<img width="120" height="120" src="../wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-120x120.jpg" class="attachment-yarpp-thumbnail size-yarpp-thumbnail wp-post-image" alt="" srcset="http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-120x120.jpg 120w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-150x150.jpg 150w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-110x110.jpg 110w, http://musicapp.ml/wp-content/uploads/2014/08/finger-on-a-tablet-computer-screen-50x50.jpg 50w" sizes="(max-width: 120px) 100vw, 120px" /><span class="yarpp-thumbnail-title">Less is more; part 2 – a compact iOS music app collection for recording</span></a>
+</div>
+</div>
+</div><div class="post-meta"><span class="categories">Filed Under: <a href="../category/how-to/articles/index.html" rel="category tag">Articles</a>, <a href="../category/how-to/index.html" rel="category tag">Getting Started</a>, <a href="../category/getting-started-articles/index.html" rel="category tag">Getting Started Articles</a>, <a href="../category/ios-music-app-roundups/index.html" rel="category tag">iOS music app roundups</a></span> <span class="tags">Tagged With: <a href="../tag/getting-started/index.html" rel="tag">getting started</a>, <a href="../tag/ios-music/index.html" rel="tag">iOS music</a>, <a href="../tag/ios-music-apps/index.html" rel="tag">iOS music apps</a>, <a href="../tag/iphone/index.html" rel="tag">iPhone</a>, <a href="../tag/music-apps/index.html" rel="tag">music apps</a></span></div></div><div id="comments"><h3>Comments</h3><ol class="comment-list">
+	<li class="comment even thread-even depth-1" id="comment-13548">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/e959f5daaa6f5d05d0ea061a491a6742?s=48&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/e959f5daaa6f5d05d0ea061a491a6742?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">Chris Catalano</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13548">May 30, 2014 at 12:55 pm</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>I really need to address the insane overload of apps on my iPad, and even the stuff on my desktop. Too much stuff getting in the way of the creative roll seems to be a very big theme of late in a lot of articles I have been reading about blocks in getting the actual music done.</p>
+<p>I like your choices here. They reflect an awareness of what the bread and butter sounds, instruments, and layering choices we have for making good old fashioned songs, and really, so much more with a healthy dose of imagination and attitude thrown into the mix. Having said that, after discovering things like Sector, Turnado, Nave, Animoog, IVCS3, it may be a tall order to &#8220;get back to basics&#8221; for a lot of us&#8230;you as well, I imagine;)&#8230;</p>
+<p>Great, timely article, as per usual, John.</p>
+<p>Cheers!</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13548' onclick='return addComment.moveForm( "comment-13548", "13548", "respond", "7881" )' aria-label='Reply to Chris Catalano'>Reply</a>		</div>
+
+		<ul class="children">
+
+	<li class="comment byuser comment-author-iamincharge123 bypostauthor odd alt depth-2" id="comment-13564">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=48&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">John</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13564">May 30, 2014 at 5:08 pm</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>Hi Chris&#8230;.  thanks for the kind words. I guess what I&#8217;m suggesting here is not that we delete all the other (excellent) stuff&#8230;  but just that for this very specific task of capturing the essence of an initial idea, the &#8216;bare bones&#8217; software is actually all you need. Once captured &#8211; and when you have the time and inclination &#8211; these initial ideas can be turned into a fully-developed production using anything you might care to throw at it :-)  Again, thanks and very best wishes, John</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13564' onclick='return addComment.moveForm( "comment-13564", "13564", "respond", "7881" )' aria-label='Reply to John'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-13549">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/0a46a1ba52f8bc8497ed930498f99272?s=48&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/0a46a1ba52f8bc8497ed930498f99272?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">Jg</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13549">May 30, 2014 at 12:57 pm</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>I think my choice would be GarageBand. It is the simplest and cheapest music notepad app</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13549' onclick='return addComment.moveForm( "comment-13549", "13549", "respond", "7881" )' aria-label='Reply to Jg'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-13574">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/bd72ee71f905acaa20899e59f6e62942?s=48&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/bd72ee71f905acaa20899e59f6e62942?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn"><a href='http://www.deepfry.info/' rel='external nofollow' class='url'>Tristan</a></cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13574">May 30, 2014 at 8:29 pm</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>Glad to see iphone as go-to in this article&#8230;. Oddly enough, I find iphone to be a great format for performance. Using thumbjam constrained to scale, can make for great melodic improvisation . Using the tilt and roll ( accelerometer ) input to control synths has also been quite useful on iphone.<br />
+Thanks John</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13574' onclick='return addComment.moveForm( "comment-13574", "13574", "respond", "7881" )' aria-label='Reply to Tristan'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+
+	<li class="comment even thread-odd thread-alt depth-1" id="comment-13590">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/6e0bcbb13765f4ebd23bc1c44b57845d?s=48&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/6e0bcbb13765f4ebd23bc1c44b57845d?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">Chris</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13590">May 31, 2014 at 3:28 am</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>This is exactly the kind of reason I love having a smart phone. Its wonderful to quickly take notes, record a sound I like, or take pics of something that inspires me. Personally, my iOS app (yes, app singular) for this is Nanoloop. You can do a bit of everything with it, and most importantly, I&#8217;m used to it. Which is probably the most important thing; you don&#8217;t want to be fumbling around when you got an idea in your head.</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13590' onclick='return addComment.moveForm( "comment-13590", "13590", "respond", "7881" )' aria-label='Reply to Chris'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-even depth-1" id="comment-13604">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/7f46f0833d13944e31d9c0d79cea8607?s=48&amp;d=mm&amp;r=g' srcset='http://1.gravatar.com/avatar/7f46f0833d13944e31d9c0d79cea8607?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">Alex</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13604">May 31, 2014 at 11:05 am</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>Interesting article. I dont have iphone but I do have an ipad so doesnt really apply. I will say that a streamlined approach is sensible I generally stick with bs16i paino straight into Meteor DAW or mazybe acoustic guitar into Loopy. Keeping it simple is key (sorry &#8217;bout that).</p>
+<p>* One thing is really bothering me about this article though. Please can you clear you inbox on your emails its creeping me out? :)</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13604' onclick='return addComment.moveForm( "comment-13604", "13604", "respond", "7881" )' aria-label='Reply to Alex'>Reply</a>		</div>
+
+		<ul class="children">
+
+	<li class="comment byuser comment-author-iamincharge123 bypostauthor even depth-2" id="comment-13689">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=48&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">John</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13689">June 1, 2014 at 9:05 am</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>:-) Sorry&#8230;.   it&#8217;s not as bad as it looks&#8230;.   all the same email gets onto my iPad/iMac also and that&#8217;s where it gets looked at and dealt with mostly&#8230;.   And don&#8217;t forget, it includes notification of every bit of spam comment fluff that &#8216;bots&#8217; hit the website with. I&#8217;ve really got to get a better system for dealing with that :-)  best wishes, John</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13689' onclick='return addComment.moveForm( "comment-13689", "13689", "respond", "7881" )' aria-label='Reply to John'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-13621">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/bd72ee71f905acaa20899e59f6e62942?s=48&amp;d=mm&amp;r=g' srcset='http://2.gravatar.com/avatar/bd72ee71f905acaa20899e59f6e62942?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn"><a href='http://www.deepfry.info/' rel='external nofollow' class='url'>Tristan</a></cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13621">May 31, 2014 at 4:18 pm</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>Lol 4000 + unread</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13621' onclick='return addComment.moveForm( "comment-13621", "13621", "respond", "7881" )' aria-label='Reply to Tristan'>Reply</a>		</div>
+
+		<ul class="children">
+
+	<li class="comment byuser comment-author-iamincharge123 bypostauthor even depth-2" id="comment-13690">
+
+		
+		<div class="comment-header">
+			<div class="comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=48&amp;d=mm&amp;r=g' srcset='http://0.gravatar.com/avatar/f8f56e6c9e09d2e27121397ff5ca47be?s=96&#038;d=mm&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' />				<cite class="fn">John</cite> <span class="says">says:</span>		 	</div>
+
+			<div class="comment-meta commentmetadata">
+				<a href="index.html#comment-13690">June 1, 2014 at 9:07 am</a>
+							</div>
+		</div>
+
+		<div class="comment-content">
+			
+			<p>OK already!  Now done :-)  best wishes, John</p>
+		</div>
+
+		<div class="reply">
+			<a rel='nofollow' class='comment-reply-link' href='#comment-13690' onclick='return addComment.moveForm( "comment-13690", "13690", "respond", "7881" )' aria-label='Reply to John'>Reply</a>		</div>
+
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ol></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://musicapp.ml/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea></p><p class="comment-form-author"><input id="author" name="author" type="text" value="" size="30" tabindex="1" aria-required="true" /><label for="author">Name</label> <span class="required">*</span></p>
+<p class="comment-form-email"><input id="email" name="email" type="text" value="" size="30" tabindex="2" aria-required="true" /><label for="email">Email</label> <span class="required">*</span></p>
+<p class="comment-form-url"><input id="url" name="url" type="text" value="" size="30" tabindex="3" /><label for="url">Website</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='7881' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><input type="hidden" name="a8fb55ad86c647ddd91b45260ec67243" value="a8fb55ad86c647ddd91b45260ec67243"/><p id="gasp_p" style="clear:both;"></p><script type="text/javascript">
+        //v1.5.1
+        var gasp_p = document.getElementById("gasp_p");
+        var gasp_cb = document.createElement("input");
+        var gasp_text = document.createTextNode(" Confirm you are NOT a spammer");
+        gasp_cb.type = "checkbox";
+        gasp_cb.id = "cl_check_9de";
+        gasp_cb.name = "cl_check_9de";
+
+        var gasp_label = document.createElement("label");
+        gasp_p.appendChild(gasp_label);
+        gasp_label.appendChild(gasp_cb);
+        gasp_label.appendChild(gasp_text);
+        var frm = gasp_cb.form;
+        frm.onsubmit = gasp_it;
+        function gasp_it(){
+        if(gasp_cb.checked != true){
+        alert("Please check the box to confirm that you are NOT a spammer");
+        return false;
+        }
+        return true;
+        }
+        </script>
+        <noscript>you MUST enable javascript to be able to comment</noscript>
+        <input type="hidden" id="gasp_email" name="gasp_email" value="" />			</form>
+			</div><!-- #respond -->
+	</div><div id="sidebar" class="sidebar widget-area"><div id="search-3" class="widget widget_search"><div class="widget-wrap"></div></div>
+
+<div id="oio-widget-4" class="widget oio"><div class="widget-wrap">
+
+<ul class="oio-banner-zone" id="oio-banner-2" style="width:250px; height:385px; margin:0 auto;">
+<li style="width:250px; height:125px; margin:0 0 5px 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/app/midifire/id906600872?mt=8&amp;at=11l7rh&amp;ct=ad_mab1" title="MidiFire"><img src="../wp-content/plugins/oiopub-direct/uploads/QnF2ZO_master_musicappblog.png" width="250" height="125" border="0" alt="MidiFire" /></a></li>
+<li style="width:250px; height:125px; margin:0 0 5px 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/cubasis-music-production-system/id583976519?mt=8&amp;amp;uo=4&amp;amp;at=10l3RB" title="itunes.apple.com"><img src="../wp-content/plugins/oiopub-direct/uploads/CSdumw_250x125_Cubasis_v1.jpg" width="250" height="125" border="0" alt="itunes.apple.com" /></a></li>
+<li style="width:250px; height:125px; margin:0 0 0 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/drum-session/id1030319584?mt=8" title="View on app store"><img src="../wp-content/plugins/oiopub-direct/uploads/rW9uMT_drumSessionAdForMusicAppBlog.gif" width="250" height="125" border="0" alt="View on app store" /></a></li>
+</ul>
+</div></div>
+<div id="oio-widget-3" class="widget oio"><div class="widget-wrap">
+
+<div id="oio-banner-1" style="width:100%; max-width:250px; margin:0 auto;">
+<a rel="nofollow" target="_blank" href="../music-app-blog-email-newsletter/index.html" title="musicapp.ml"><img src="../wp-content/uploads/2016/06/25-music-apps-250-100-blue.jpg" width="250" height="100" border="0" alt="musicapp.ml" style="width:100%; height:auto;" /></a>
+</div>
+</div></div>
+<div id="oio-widget-5" class="widget oio"><div class="widget-wrap">
+
+<ul class="oio-banner-zone" id="oio-banner-3" style="width:260px; height:260px; margin:0 auto;">
+<li style="width:125px; height:125px; margin:0 10px 10px 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/korg-gadget/id791077159?mt=8&amp;amp;uo=4&amp;amp;at=10l3RB" title="itunes.apple.com"><img src="../wp-content/uploads/2014/10/Gadget-logo-ad.jpg" width="125" height="125" border="0" alt="itunes.apple.com" /></a></li>
+<li style="width:125px; height:125px; margin:0 0 10px 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/cubasis-music-production-system/id583976519?mt=8&amp;uo=4&amp;at=10l3RB" title="itunes.apple.com"><img src="../wp-content/uploads/2014/05/cubasis-logo-3.jpg" width="125" height="125" border="0" alt="itunes.apple.com" /></a></li>
+<li style="width:125px; height:125px; margin:0 10px 0 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/layr-multi-timbral-synthesizer/id1155825562?mt=8&amp;amp;at=10l3RB" title="itunes.apple.com"><img src="../wp-content/uploads/2017/03/layr-logo-1-copy.jpg" width="125" height="125" border="0" alt="itunes.apple.com" /></a></li>
+<li style="width:125px; height:125px; margin:0 0 0 0;"><a rel="nofollow" target="_blank" href="https://itunes.apple.com/us/app/poison-202-vintage-midi-synthesizer/id1145895278?mt=8&amp;amp;at=10l3RB" title="itunes.apple.com"><img src="../wp-content/uploads/2017/04/Poison-202-logo-2.jpg" width="125" height="125" border="0" alt="itunes.apple.com" /></a></li>
+</ul>
+</div></div>
+<div id="oio-widget-6" class="widget oio"><div class="widget-wrap">
+
+<div id="oio-banner-4" style="width:100%; max-width:250px; margin:0 auto;">
+<a rel="nofollow" target="_blank" href="index.html" title="musicapp.ml"><img src="../wp-content/uploads/2014/10/Ever-ready-apps-250-75-advert-JW-v5.jpg" width="250" height="75" border="0" alt="musicapp.ml" style="width:100%; height:auto;" /></a>
+</div>
+</div></div>
+<div id="text-44" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><a href="../music-app-blog-email-newsletter/index.html"><img src="../wp-content/uploads/2013/10/free-25-app-guide-graphic-no-4-JW-v1-198x300.jpg" alt="free 25 app guide graphic no 4 JW v1" width="198" height="300" class="aligncenter size-medium wp-image-4692" /></a></div>
+		</div></div>
+<div id="text-6" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><a href="httpwww.soundonsound.com/"><img src="../www.soundonsound.com/images/234x60.gif" width="234" height="60" alt="Visit Sound On Sound" border="0"></a></div>
+		</div></div>
+<div id="text-7" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2355199413467339";
+/* JW Music Apps Site Image Ad 1 */
+google_ad_slot = "5543995233";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></div>
+		</div></div>
+<div id="text-45" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2355199413467339";
+/* JW Music Apps Site Image Ad 1 */
+google_ad_slot = "5543995233";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></div>
+		</div></div>
+<div id="text-46" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2355199413467339";
+/* JW Music Apps Site Image Ad 1 */
+google_ad_slot = "5543995233";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></div>
+		</div></div>
+<div id="text-47" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2355199413467339";
+/* JW Music Apps Site Image Ad 1 */
+google_ad_slot = "5543995233";
+google_ad_width = 250;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></div>
+		</div></div>
+</div></div></div></div><div id="footer" class="footer"><div class="wrap"><div class="gototop"><p><a href="#wrap" rel="nofollow">Return to top of page</a></p></div><div class="creds"><p>Copyright &#x000A9;&nbsp;2018 &#x000B7; <a href="http://www.studiopress.com/themes/news">News Theme</a> on <a href="https://www.studiopress.com/">Genesis Framework</a> &#x000B7; <a href="https://wordpress.org/">WordPress</a> &#x000B7; </p></div></div></div></div><img id="oio-pixel" src="../wp-content/plugins/oiopub-direct/modules/tracker/tracker85ef.gif?pids=42|38|0" alt="" />
+<style type="text/css">
+</style>
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='../wp-content/plugins/yet-another-related-posts-plugin/style/related5010.css?ver=4.9.8' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/musicapp.ml\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts972f.js?ver=5.0.1'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.min5010.js?ver=4.9.8'></script>
+<script type='text/javascript' src='../wp-includes/js/hoverIntent.minc245.js?ver=1.8.1'></script>
+<script type='text/javascript' src='../wp-content/themes/genesis/lib/js/menu/superfish.min93f6.js?ver=1.7.5'></script>
+<script type='text/javascript' src='../wp-content/themes/genesis/lib/js/menu/superfish.args.minc141.js?ver=2.6.1'></script>
+<script type='text/javascript' src='../wp-content/themes/genesis/lib/js/menu/superfish.compat.minc141.js?ver=2.6.1'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min5010.js?ver=4.9.8'></script>
+</body>
+
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: musicapp.ml @ 2018-08-24 11:26:39 by W3 Total Cache
+-->
