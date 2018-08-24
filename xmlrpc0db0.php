@@ -2,13 +2,13 @@
   <service>
     <engineName>WordPress</engineName>
     <engineLink>https://wordpress.org/</engineLink>
-    <homePageLink>http://musicapp.ml</homePageLink>
+    <homePageLink>http://musicappblog.com</homePageLink>
     <apis>
-      <api name="WordPress" blogID="1" preferred="true" apiLink="http://musicapp.ml/xmlrpc.php" />
-      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://musicapp.ml/xmlrpc.php" />
-      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://musicapp.ml/xmlrpc.php" />
-      <api name="Blogger" blogID="1" preferred="false" apiLink="http://musicapp.ml/xmlrpc.php" />
-      	<api name="WP-API" blogID="1" preferred="false" apiLink="http://musicapp.ml/wp-json/" />
+      <api name="WordPress" blogID="1" preferred="true" apiLink="http://musicappblog.com/xmlrpc.php" />
+      <api name="Movable Type" blogID="1" preferred="false" apiLink="http://musicappblog.com/xmlrpc.php" />
+      <api name="MetaWeblog" blogID="1" preferred="false" apiLink="http://musicappblog.com/xmlrpc.php" />
+      <api name="Blogger" blogID="1" preferred="false" apiLink="http://musicappblog.com/xmlrpc.php" />
+      	<api name="WP-API" blogID="1" preferred="false" apiLink="http://musicappblog.com/wp-json/" />
 	    </apis>
   </service>
 </rsd>
